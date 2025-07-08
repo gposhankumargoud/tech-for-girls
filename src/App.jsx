@@ -16,7 +16,7 @@ function App() {
         fileContent: base64,
       };
 
-      await fetch("YOUR_SCRIPT_URL", {
+      await fetch("https://script.google.com/macros/s/AKfycbxwDhmeJZ-D6MMXhEZ-1C7MYZ7nZMi9lVO6czSz16-beROc3MiwOfK2ja2GLZDbcp_E/exec", {
         method: "POST",
         body: JSON.stringify(dataToSend),
         headers: { "Content-Type": "application/json" },
